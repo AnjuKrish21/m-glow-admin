@@ -1,0 +1,7 @@
+{
+  "name": "m-glow-admin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
