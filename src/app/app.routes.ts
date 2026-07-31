@@ -3,12 +3,38 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/inbox',
-    pathMatch: 'full',
+    redirectTo: 'login',
+    pathMatch: 'full'
   },
+
   {
-    path: 'folder/:id',
+    path: 'login',
     loadComponent: () =>
-      import('./folder/folder.page').then((m) => m.FolderPage),
+      import('./features/auth/login/login.component').then(
+        (m) => m.LoginComponent
+      )
   },
+
+  {
+    path: '',
+    loadComponent: () =>
+      import('./core/layout/app-shell/app-shell.component').then(
+        (m) => m.AppShellComponent
+      ),
+
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () =>
+          import('./features/dashboard/dashboard/dashboard.component').then(
+            (m) => m.DashboardComponent
+          )
+      }
+    ]
+  },
+
+  {
+    path: '**',
+    redirectTo: 'login'
+  }
 ];

@@ -1,5 +1,5 @@
-@forward 'colors';
-@forward 'spacing';
-@forward 'typography';
-@forward 'variables';
-@forward 'mixins';
+@use "tokens/colors";
+@use "tokens/spacing";
+@use "tokens/radius";
+@use "tokens/typography";
+@use "tokens/shadows";
