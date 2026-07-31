@@ -1,0 +1,35 @@
+.mg-button {
+
+  --background: linear-gradient(
+      135deg,
+      var(--mg-primary),
+      var(--mg-primary-light)
+  );
+
+  --color: #111;
+
+  --border-radius: var(--radius-lg);
+
+  --box-shadow: var(--shadow-button);
+
+  font-weight: 600;
+
+  letter-spacing: .4px;
+
+  height: 52px;
+
+  transition: .25s ease;
+
+}
+
+.mg-button:hover{
+
+  transform: translateY(-2px);
+
+}
+
+.mg-button:active{
+
+  transform: scale(.98);
+
+}

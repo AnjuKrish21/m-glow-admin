@@ -1,0 +1,19 @@
+<ion-button
+  class="mg-button"
+  [expand]="expand()"
+  [disabled]="disabled() || loading()"
+  (click)="onClick()">
+
+  @if (loading()) {
+
+    <ion-spinner
+      name="crescent">
+    </ion-spinner>
+
+  } @else {
+
+    {{ label() }}
+
+  }
+
+</ion-button>

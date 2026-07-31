@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { GoldButtonComponent } from './gold-button.component';
+import { MgButtonComponent } from './mg-button.component';
 
-describe('GoldButtonComponent', () => {
-  let component: GoldButtonComponent;
-  let fixture: ComponentFixture<GoldButtonComponent>;
+describe('MgButtonComponent', () => {
+  let component: MgButtonComponent;
+  let fixture: ComponentFixture<MgButtonComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [GoldButtonComponent],
+      imports: [MgButtonComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GoldButtonComponent);
+    fixture = TestBed.createComponent(MgButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
