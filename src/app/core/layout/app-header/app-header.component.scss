@@ -1,0 +1,15 @@
+.mg-header {
+
+  ion-toolbar {
+
+    --background: rgba(20,20,20,.92);
+
+    --border-width:0;
+
+    color:var(--mg-text);
+
+    backdrop-filter: blur(20px);
+
+  }
+
+}
